@@ -10,7 +10,7 @@ scrapy runspider jdmongodb.py 主要是从redis里面读url，解析数据保存
 middlewares.ProxyMiddleware 使用阿布云代理服务器轮换请求IP
 
 每页60条数据，源码仅有30条，解决下拉时刷新的剩余30条数据抓取。
-
+                                                              京东商品信息mongodb图示
 ![京东商品信息](https://github.com/renqian520/jd/blob/master/%E4%BA%AC%E4%B8%9C%E5%95%86%E5%93%81%E4%BF%A1%E6%81%AF.jpg)
-
+                                                              京东商品评论mongodb图示
 ![京东商品评论](https://github.com/renqian520/jd/blob/master/%E4%BA%AC%E4%B8%9C%E5%95%86%E5%93%81%E8%AF%84%E8%AE%BA.jpg)
