@@ -48,7 +48,7 @@ REDIS_PORT = 6379
 REDIS_DB = 0
 MY_REDIS = 'jd_spider:start_urls' #redis数据表
 #设置爬虫运行时间，如果爬虫还没有结束，则自动关闭
-CLOSESPIDER_TIMEOUT = 300
+CLOSESPIDER_TIMEOUT = 82800
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -96,8 +96,8 @@ RANDOMIZE_DOWNLOAD_DELAY = True
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddleware.useragent.UserAgentMiddleware' : None,
     'jd.useragent.UserAgent':50,
-     #'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 90,
-     #'jd.middlewares.ProxyMiddleware':100,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 90,
+    'jd.middlewares.ProxyMiddleware':100,
 }
 
 # Enable or disable extensions
